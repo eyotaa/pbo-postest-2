@@ -85,3 +85,77 @@
 
   <li>Class BilliardStore</li>
   <ul>
+Program di atas merupakan bagian dari aplikasi toko biliar yang mengelola barang-barang biliar, seperti Cue (tongkat) dan Glove (sarung tangan). Program ini menyediakan operasi untuk menambahkan, menghapus, mengupdate, dan menampilkan barang-barang biliar dalam toko.
+    
+1. **Deklarasi ArrayList**: Program ini mendeklarasikan dua ArrayList statis yang digunakan untuk menyimpan daftar barang-barang biliar:
+   - `itemsCue`: ArrayList untuk menyimpan barang-barang jenis Cue.
+   - `itemsGlove`: ArrayList untuk menyimpan barang-barang jenis Glove.
+
+2. **Method `addItemCue` dan `addItemGlove`**: Dua method ini digunakan untuk menambahkan barang baru ke dalam ArrayList yang sesuai (Cue atau Glove).
+
+3. **Method `displayItemsCue` dan `displayItemsGlove`**: Method ini digunakan untuk menampilkan daftar barang-barang biliar jenis Cue dan Glove.
+
+4. **Method `displayItems`**: Method ini menggabungkan dua metode sebelumnya untuk menampilkan semua barang biliar dalam toko.
+
+5. **Method `removeItemByIdCue`** dan `removeItemByIdGlove`: Dua method ini digunakan untuk menghapus barang berdasarkan ID dari ArrayList yang sesuai (Cue atau Glove).
+
+6. **Method `updateItemByIdCue`** dan `updateItemByIdGlove`: Dua method ini digunakan untuk mengupdate informasi barang berdasarkan ID dari ArrayList yang sesuai (Cue atau Glove).
+
+  <li>Class Cue</li>
+  <ul>
+  Program di atas adalah implementasi kelas `Cue`, yang merupakan subkelas dari `BilliardItem`. Kelas ini mewakili barang-barang biliar jenis Cue (tongkat).
+1. **Kelas `Cue` extends `BilliardItem`:** Ini berarti `Cue` adalah subkelas dari kelas `BilliardItem`. Dengan demikian, `Cue` akan mewarisi semua atribut dan metode yang ada dalam `BilliardItem`.
+
+2. **Variabel anggota pribadi:**
+   - `length` (tipe data `int`): Digunakan untuk menyimpan panjang Cue dalam sentimeter.
+   - `weight` (tipe data `int`): Digunakan untuk menyimpan berat Cue dalam gram.
+
+3. **Konstruktor `Cue`**: Konstruktor ini digunakan untuk membuat objek `Cue`. Ia menerima beberapa argumen sebagai berikut:
+   - `idItem` (tipe data `String`): ID item Cue.
+   - `name` (tipe data `String`): Nama item Cue.
+   - `price` (tipe data `int`): Harga item Cue.
+   - `length` (tipe data `int`): Panjang Cue dalam sentimeter.
+   - `weight` (tipe data `int`): Berat Cue dalam gram.
+
+   Konstruktor ini menginisialisasi atribut `idItem`, `name`, dan `price` dari kelas `BilliardItem` menggunakan kata kunci `super`, dan menginisialisasi atribut `length` dan `weight` kelas `Cue`.
+
+4. **Metode getter:**
+   - `getLength()`: Mengembalikan panjang Cue.
+   - `getWeight()`: Mengembalikan berat Cue.
+
+5. **Metode setter:**
+   - `setLength(int length)`: Digunakan untuk mengatur panjang Cue.
+   - `setWeight(int weight)`: Digunakan untuk mengatur berat Cue.
+
+6. **Metode `displayItem()`:** Ini adalah metode yang di-override dari kelas `BilliardItem`. Metode ini digunakan untuk menampilkan informasi tentang barang biliar jenis Cue ke konsol. Ia mencetak ID item, nama, harga, panjang, dan berat Cue.
+
+  <li>Class Cue</li>
+  <ul>
+Program di atas adalah implementasi kelas `Glove`, yang juga merupakan subkelas dari `BilliardItem`. Kelas ini mewakili barang-barang biliar jenis sarung tangan (Glove). Berikut adalah penjelasan mengenai program tersebut:
+
+1. **Kelas `Glove` extends `BilliardItem`:** Ini berarti `Glove` adalah subkelas dari kelas `BilliardItem`. Sebagai subkelas, `Glove` mewarisi semua atribut dan metode yang ada dalam `BilliardItem`.
+
+2. **Variabel anggota pribadi:**
+   - `size` (tipe data `String`): Digunakan untuk menyimpan ukuran sarung tangan.
+   - `color` (tipe data `String`): Digunakan untuk menyimpan warna sarung tangan.
+
+3. **Konstruktor `Glove`:** Konstruktor ini digunakan untuk membuat objek `Glove`. Ia menerima beberapa argumen sebagai berikut:
+   - `idItem` (tipe data `String`): ID item sarung tangan.
+   - `name` (tipe data `String`): Nama item sarung tangan.
+   - `price` (tipe data `int`): Harga item sarung tangan.
+   - `size` (tipe data `String`): Ukuran sarung tangan.
+   - `color` (tipe data `String`): Warna sarung tangan.
+
+   Konstruktor ini menginisialisasi atribut `idItem`, `name`, dan `price` dari kelas `BilliardItem` menggunakan kata kunci `super`, dan menginisialisasi atribut `size` dan `color` dari kelas `Glove`.
+
+4. **Metode getter:**
+   - `getSize()`: Mengembalikan ukuran sarung tangan.
+   - `getColor()`: Mengembalikan warna sarung tangan.
+
+5. **Metode setter:**
+   - `setSize(String size)`: Digunakan untuk mengatur ukuran sarung tangan.
+   - `setColor(String color)`: Digunakan untuk mengatur warna sarung tangan.
+
+6. **Metode `displayItem()`:** Ini adalah metode yang di-override dari kelas `BilliardItem`. Metode ini digunakan untuk menampilkan informasi tentang barang biliar jenis sarung tangan ke konsol. Ia mencetak ID item, nama, harga, ukuran, dan warna sarung tangan.
+
+<h2>A. Screenshot Output</h2>
