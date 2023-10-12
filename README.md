@@ -28,9 +28,9 @@
   <li>Class Glove</li>
   
   ![image](https://github.com/eyotaa/pbo-postest-2/assets/95154198/c521c111-708e-4bfb-a6e4-b5e1cf290ef9)
+</ol>
 
 <h2>B. Penjelasan Source Code</h2>
-
 <ol>
   <li>Class Main</li>
   <ul>
@@ -55,9 +55,9 @@
 6. Jika pengguna memasukkan pilihan yang tidak valid, program akan memberikan pesan kesalahan dan meminta pengguna untuk memilih opsi yang valid.
 
 7. Program berjalan dalam loop hingga pengguna memilih untuk keluar (menu 5).
-
+  </ul>
   <li>Class BilliardItem</li>
-  <ul>
+  
   Program di atas mendefinisikan kelas `BilliardItem`, yang merupakan kelas abstrak (dinyatakan dengan kata kunci `abstract`). 
   Ini adalah kelas dasar untuk barang-barang yang dapat dijual di toko biliar. Berikut adalah penjelasan mengenai program tersebut:
 
@@ -82,9 +82,10 @@
 6. Terdapat dua metode setter:
    - `setName(String name)`: Digunakan untuk mengatur nama item.
    - `setPrice(int price)`: Digunakan untuk mengatur harga item.
-
+      
+  </ul>
   <li>Class BilliardStore</li>
-  <ul>
+
 Program di atas merupakan bagian dari aplikasi toko biliar yang mengelola barang-barang biliar, seperti Cue (tongkat) dan Glove (sarung tangan). Program ini menyediakan operasi untuk menambahkan, menghapus, mengupdate, dan menampilkan barang-barang biliar dalam toko.
     
 1. **Deklarasi ArrayList**: Program ini mendeklarasikan dua ArrayList statis yang digunakan untuk menyimpan daftar barang-barang biliar:
@@ -100,9 +101,10 @@ Program di atas merupakan bagian dari aplikasi toko biliar yang mengelola barang
 5. **Method `removeItemByIdCue`** dan `removeItemByIdGlove`: Dua method ini digunakan untuk menghapus barang berdasarkan ID dari ArrayList yang sesuai (Cue atau Glove).
 
 6. **Method `updateItemByIdCue`** dan `updateItemByIdGlove`: Dua method ini digunakan untuk mengupdate informasi barang berdasarkan ID dari ArrayList yang sesuai (Cue atau Glove).
-
+   
+  </ul>
   <li>Class Cue</li>
-  <ul>
+
   Program di atas adalah implementasi kelas `Cue`, yang merupakan subkelas dari `BilliardItem`. Kelas ini mewakili barang-barang biliar jenis Cue (tongkat).
 1. **Kelas `Cue` extends `BilliardItem`:** Ini berarti `Cue` adalah subkelas dari kelas `BilliardItem`. Dengan demikian, `Cue` akan mewarisi semua atribut dan metode yang ada dalam `BilliardItem`.
 
@@ -128,9 +130,10 @@ Program di atas merupakan bagian dari aplikasi toko biliar yang mengelola barang
    - `setWeight(int weight)`: Digunakan untuk mengatur berat Cue.
 
 6. **Metode `displayItem()`:** Ini adalah metode yang di-override dari kelas `BilliardItem`. Metode ini digunakan untuk menampilkan informasi tentang barang biliar jenis Cue ke konsol. Ia mencetak ID item, nama, harga, panjang, dan berat Cue.
+   
+  </ul>
+  <li>Class Glove</li>
 
-  <li>Class Cue</li>
-  <ul>
 Program di atas adalah implementasi kelas `Glove`, yang juga merupakan subkelas dari `BilliardItem`. Kelas ini mewakili barang-barang biliar jenis sarung tangan (Glove). Berikut adalah penjelasan mengenai program tersebut:
 
 1. **Kelas `Glove` extends `BilliardItem`:** Ini berarti `Glove` adalah subkelas dari kelas `BilliardItem`. Sebagai subkelas, `Glove` mewarisi semua atribut dan metode yang ada dalam `BilliardItem`.
@@ -157,5 +160,32 @@ Program di atas adalah implementasi kelas `Glove`, yang juga merupakan subkelas 
    - `setColor(String color)`: Digunakan untuk mengatur warna sarung tangan.
 
 6. **Metode `displayItem()`:** Ini adalah metode yang di-override dari kelas `BilliardItem`. Metode ini digunakan untuk menampilkan informasi tentang barang biliar jenis sarung tangan ke konsol. Ia mencetak ID item, nama, harga, ukuran, dan warna sarung tangan.
+   
+</ol>
 
-<h2>A. Screenshot Output</h2>
+<h2>C. Penjelasan Output</h2>
+<ol>
+  <li>Create</li>
+    
+![image](https://github.com/eyotaa/pbo-postest-2/assets/95154198/5d679366-9074-4ac1-8148-0bb73dda89d6)
+1. pengguna ditampilkan menu pilihan, jika pengguna memilih 2 maka akan memunculkan menu create dari cue atau glove yang dipilih
+2. pengguna dipersilahkan untuk menambahkan spesifikasi dari cue atau glove yang dipilih
+
+  </ul>
+  <li>read</li>
+  
+![image](https://github.com/eyotaa/pbo-postest-2/assets/95154198/d8b7d6c5-f1c8-44ec-ab61-802450629014)
+1. pengguna ditampilkan menu pilihan, jika pengguna memilih 1 maka akan memunculkan daftar dari cue dan glove yang telah ditambah
+  </ul>
+  <li>update</li>
+  
+![image](https://github.com/eyotaa/pbo-postest-2/assets/95154198/c0ea9d9e-361d-4f60-9529-4a7a6256bccd)
+1. pengguna ditampilkan menu pilihan, jika pengguna memilih 4 maka akan memunculkan menu update dari cue atau glove yang dipilih
+2. pengguna dipersilahkan untuk mengganti spesifikasi dari cue atau glove yang dipilih
+
+  </ul>
+  <li>Delete</li>
+  
+![image](https://github.com/eyotaa/pbo-postest-2/assets/95154198/9bee615b-b27e-4051-b91f-5596a729dffe)
+1. pengguna ditampilkan menu pilihan, jika pengguna memilih 3 maka akan memunculkan menu delete dari cue atau glove yang dipilih
+2. pengguna dipersilahkan untuk menghapus dari cue atau glove yang dipilih dengan menginput id 
